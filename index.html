@@ -1,11 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SWAROOP</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Landing Page</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f0f2f5;
+      color: #333;
+    }
+
+    header {
+      background-color: #1e90ff;
+      padding: 80px 20px;
+      text-align: center;
+      color: white;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin: auto;
+    }
+
+    .btn-primary {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 25px;
+      background-color: #ffdd57;
+      color: #000;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: space-around;
+    }
+
+    .feature-box {
+      flex: 1 1 250px;
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+      text-align: center;
+    }
+
+    .feature-box h3 {
+      margin-bottom: 15px;
+      color: #1e90ff;
+    }
+
+    footer {
+      background-color: #333;
+      color: #aaa;
+      text-align: center;
+      padding: 30px 20px;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      .features {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
 </head>
 <body>
-  <h1>Swaroop</h1>
+
+  <header>
+    <h1>Welcome to Our Website</h1>
+    <p>We help you build fast, modern websites with ease. Start your journey with us today.</p>
+    <a href="#features" class="btn-primary">Explore Features</a>
+  </header>
+
+  <section id="features">
+    <h2 style="text-align:center; margin-bottom: 40px;">Our Features</h2>
+    <div class="features">
+      <div class="feature-box">
+        <h3>Responsive Design</h3>
+        <p>Looks great on all screen sizes. Mobile, tablet, and desktop friendly.</p>
+      </div>
+      <div class="feature-box">
+        <h3>Fast Performance</h3>
+        <p>Optimized for speed and performance with clean, minimal code.</p>
+      </div>
+      <div class="feature-box">
+        <h3>Easy to Customize</h3>
+        <p>Simple structure and styles let you make it your own quickly.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Company Name. All rights reserved.</p>
+  </footer>
+
 </body>
 </html>
